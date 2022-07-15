@@ -1,7 +1,7 @@
 name: zoomable_photo_gallery
 description: This library is component of zoomable photo gellery
-version: 1.0.1
-homepage: https://github.com/sudar-life
+version: 1.0.2
+homepage: https://github.com/sudar-life/zoomable_photo_gallery_widget
 
 environment:
   sdk: ">=2.17.3 <3.0.0"
