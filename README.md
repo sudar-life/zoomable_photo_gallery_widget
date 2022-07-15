@@ -63,6 +63,9 @@ ZoomablePhotoGallery(
             )
         ),
     ),
+    onTap: () {
+        Navigator.pop(context);
+    },
 ```
 
 | Parameters | Value                                | Required | Docs                         |
@@ -77,7 +80,7 @@ ZoomablePhotoGallery(
 | `minZoom`   | `double`                 |    No    | This is the minimum zoom possible. default is 0.5 |
 | `changePage`   | `Function(int)`                 |    No    | You can received current page when page changed  |
 | `indicator`   | `List<Widget>`                 |    No    | You can make custom indicator widget |
-
+| `onTap`   | `Function()`                 |    No    | You can recived image tap event. |
 ---
 
 ### IndicatorLocation

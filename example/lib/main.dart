@@ -151,6 +151,9 @@ class _GalleryState extends State<Gallery> {
             },
           ),
         ),
+        onTap: () {
+          Navigator.pop(context);
+        },
       ),
     );
   }

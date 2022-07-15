@@ -28,6 +28,7 @@ class ZoomablePhotoGallery extends StatefulWidget {
   final double minZoom;
   final List<Widget>? indicator;
   final Function(int)? changePage;
+  final Function()? onTap;
 
   ZoomablePhotoGallery({
     Key? key,
@@ -41,6 +42,7 @@ class ZoomablePhotoGallery extends StatefulWidget {
     this.minZoom = 0.5,
     this.changePage,
     this.indicator,
+    this.onTap,
   }) : super(key: key);
 
   @override
@@ -196,6 +198,9 @@ class _ZoomablePhotoGalleryState extends State<ZoomablePhotoGallery>
     return MultiGestureDetector(
       onTouchDown: _onTouchDown,
       onTouchUp: _onTouchUp,
+      onTap: () {
+        if (widget.onTap != null) widget.onTap!();
+      },
       child: Container(
         height: widget.height ?? MediaQuery.of(context).size.height,
         color: widget.backColor,
