@@ -68,22 +68,24 @@ ZoomablePhotoGallery(
     },
 ```
 
-| Parameters | Value                                | Required | Docs                         |
-| ---------- | ------------------------------------ | :------: | ---------------------------- |
-| `imageList`      | `List<Widget>`                 |   YES    | Required to image list widget     |
-| `initIndex`   | `int`                             |   No     | First view location of when would mounted this widget   |
-| `location`     | `IndicatorLocation`              |   No    | indicator location enum option (ex : BOTTOM_CENTER , TOP_CENTER ...)               |
-| `controller`   | `ZoomablePhotoController`                 |    No    | You can controller paging in yourside. so you can make custom indicator |
-| `backColor`   | `Color`                 |    No    | You can set the exterior color. |
-| `height`   | `double`                 |    No    | It is height of photo gallery , default is display of device size  |
-| `maxZoom`   | `double`                 |    No    | This is the maximum zoom possible. default is 2.5|
-| `minZoom`   | `double`                 |    No    | This is the minimum zoom possible. default is 0.5 |
-| `changePage`   | `Function(int)`                 |    No    | You can received current page when page changed  |
-| `indicator`   | `List<Widget>`                 |    No    | You can make custom indicator widget |
-| `onTap`   | `Function()`                 |    No    |  You can recived image tap event. |
----
 
-### IndicatorLocation
+| Parameters | Value                                | Required | Docs                                                                                 |
+| ---------- | ------------------------------------ | :------: | ------------------------------------------------------------------------------------ |
+| `imageList`   | `List<Widget>`                    |   YES    | Required to image list widget                                                        |
+| `initIndex`   | `int`                             |    No    | First view location of when would mounted this widget                                |
+| `location`    | `IndicatorLocation`               |    No    | indicator location enum option (ex : BOTTOM_CENTER , TOP_CENTER ...)                 |
+| `controller`  | `ZoomablePhotoController`         |    No    | You can controller paging in yourside. so you can make custom indicator              |
+| `backColor`   | `Color`                           |    No    | You can set the exterior color.                                                      |
+| `height`      | `double`                          |    No    | It is height of photo gallery , default is display of device size                    |
+| `maxZoom`     | `double`                          |    No    | This is the maximum zoom possible. default is 2.5                                    |
+| `minZoom`     | `double`                          |    No    | This is the minimum zoom possible. default is 0.5                                    |
+| `changePage`  | `Function(int)`                   |    No    | You can received current page when page changed                                      |
+| `indicator`   | `List<Widget>`                    |    No    | You can make custom indicator widget                                                 |
+| `onTap`       | `Function()`                      |    No    |  You can recived image tap event                                                     |
+
+
+
+## IndicatorLocation
 indicator location enum option
 
 ```dart
